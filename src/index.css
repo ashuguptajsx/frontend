@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+::-webkit-scrollbar{
+  width: 10px;  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4B5563;
+  border-radius: 10px;
+}   
+
+::-webkit-scrollbar-track {
+  background: #1F2937;
+  border-radius: 10px;
+} 
+
+@layer components{
+  .bg-glass{
+    @apply bg-white/5 backdrop-blur-md border border-white/20 text-white sm:max-w-sm hover:bg-white/10 transition-all duration-500
+  }
+}
